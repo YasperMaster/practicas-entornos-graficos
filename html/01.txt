@@ -1,0 +1,39 @@
+ 
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+HTML (Hyper Text Markup Language ó lenguaje de marcado de hipertexto en español) es un lenguaje de marcado que se utiliza en la creacion de páginas web. Mientras que un lenguaje de marcado es una forma de codificar un documento que incorpora etiquetas que contienen información adicional acerca de la estructura del texto o su presentación.
+Fue lanzado por primera vez en 1993 y evolucionando a través de diferentes versiones:
+    - HTML 2.0 (1995)
+    - HTML 3.2 (1997)
+    - HTML 4.01 (1999)
+    - XHTML 1.0 (2000 - integró una sintáxis basada en XML)
+    - HTML5 (2014)
+    - HTML5.1 (2016)
+    - HTML5.2 (2017)
+    - HTML Living Standard (Ultima versión)
+Hay que destacar que las dos organizaciones encargadas de mantener HTML (w3c y Web Hypertext Application Technology Working Group) adoptaron un modelo "Living standard". Esto significa que HTML será continuamente actualizado con nuevas funciones y mejoras, en vez de implentar diferentes versiones. Su documentación oficial se encuentra en [https://html.spec.whatwg.org/multipage/]
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos
+con HTML?
+
+- Todos los documentos HTML deben empezar con una declaración del tipo de documento, utilizando la siguiente etiqueta: <!DOCTYPE html>
+- Un documento HTML debe comenzar con una etiqueta <html> y terminar con </html>
+- La parte visible del documento debe estar contenida entre dos etiquetas <body> y </body>
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y
+obsoleto?
+
+El término "desaprobado" ha sido reemplazado por el concepto de "obsoleto pero conforme". Un atributo obsoleto puede ser algo que ya no se recomienda (pero aún es válido) o algo que está completamente prohibido.
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+DTD significa Document Type Definition. Es un conjunto de reglas que definen la estructura y la sintaxis de un documento HTML.
+    - DTD Estricto: Incluye todos los elementos y atributos que no han sido desaprobados (deprecated).
+    - DTD Transicional: Incluye todo el contenido del DTD Strict más los elementos y atributos que han sido desaprobados.
+    - DTD de Conjunto de frames: Incluye todo el contenido del DTD Transitional y además añade soporte para frames.
+Los frames se utilizan para dividir la ventana del navegador en múltiples secciones.
+
+5. Qué son los metadatos y cómo se especifican en HTML?
+
+Los metadatos son datos que describen otros datos. En HTML se utiliza la etiqueta <meta> y se utliza para representar otros elementos como <base>, <link>, <script>, <style> ó <title>. 
+
