@@ -1,0 +1,196 @@
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+Abre Google en la misma pestaña/ventana.
+
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+Añade target="_blank". Abre el enlace en una nueva pestaña o ventana.
+
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+Hay un error en la URL. Los atributos "type", "hreflang", "charset" y "rel" no van en una etiqueta <a>.
+
+<a href="#">Click aquí para ir a Google</a>
+Es un enlace al mismo documento. Al hacer clic, recarga la página o sube al inicio.
+
+<a href="#arriba">Click aquí para volver arriba</a>
+<a name="arriba" id="arriba"></a>
+#arriba busca un elemento con id="arriba" o name="arriba". Al hacer clic, la página se desplaza hasta ese elemento (en este caso, un <a> vacío).
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+Muestra la imagen "imagen1" y el texto "Click aquí" como enlace
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+La imagen está dentro del enlace, pero el texto "Click aquí" está fuera del <a>. Se puede hacer click en la imagen y no en el texto.
+
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1"/>Click aquí</a></p>
+La imagen y el texto "Click aquí" están dentro del mismo enlace. Ambos son clickeables y llevan a Google.
+
+<p>
+<a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1"/></a>
+<a href="http://www.google.com.ar">Click aquí</a>
+</p>
+Hay dos enlaces separados: uno con la imagen y otro con el texto. Ambos llevan a Google, pero son elementos independientes.
+
+3.c)
+<ul>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ul>
+
+Lista no ordenada
+
+<ol>
+  <li>xxx</li>
+  <li>yyy</li>
+  <li>zzz</li>
+</ol>
+
+Lista ordenada
+
+<ol>
+  <li>xxx</li>
+</ol>
+<ol>
+  <li value="2">yyy</li>
+</ol>
+<ol>
+  <li value="3">zzz</li>
+</ol>
+
+Cada <ol> es independiente. El primero empieza en 1; el segundo usa value="2" y el tercero value="3".
+
+<blockquote>
+  <p>1. xxx<br />2. yyy<br />3. zzz</p>
+</blockquote>
+No es una lista. Simula visualmente una lista usando saltos de línea (<br>) y números escritos manualmente.
+
+3.d)
+<table border="1" width="300">
+  <tr>
+    <th>Columna 1</th>
+    <th>Columna 2</th>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+Usa <th> por lo que el texto se muestra en negrita y centrado por defecto. 
+
+<table border="1" width="300">
+  <tr>
+    <td><div align="center"><strong>Columna1</strong></div></td>
+    <td><div align="center"><strong>Columna2</strong></div></td>
+  </tr>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+Usa <td> con <div align="center"> y <strong> para simular visualmente el mismo estilo (negrita y centrado). Pero no tiene valor semántico.
+
+3.e)
+<table width="200">
+  <caption>Título</caption>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+</table>
+Usa <caption> y el título aparece fuera de la tabla 
+
+<table width="200">
+  <tr>
+    <td colspan="3"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+</table>
+Usa una fila adicional con colspan="3" para crear una celda que ocupe todo el ancho y centrar el texto. El título está dentro de la tabla.
+
+3.f)
+<table width="200">
+  <tr>
+    <td colspan="3"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+</table>
+El título ocupa 3 columnas. La primer celda ocupa 2 filas (rowspan="2"), las otras dos ocupan 1 fila. Solo tiene 2 celdas (porque la primera celda de la fila 2 se extiende hacia abajo).
+
+<table width="200">
+  <tr>
+    <td colspan="3"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+    <td bgcolor="#dddddd">&nbsp;</td>
+  </tr>
+</table>
+El título ocupa 3 columnas. La primer celda ocupa 2 columnas (colspan="2"), la tercera ocupa 1 columna. Tiene 3 celdas, todas de una fila.
+
+3.g)
+<!-- Tabla 1 -->
+<table width="200" border="1">
+  <tr>
+    <td colspan="3"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
+El título ocupa 3 columnas. La primer celda de la fila 2 usa colspan="2" rowspan="2" (abarca 2 columnas y 2 filas). Tabla de 3 columnas. No tiene "cellpadding" ni "cellspacing".
+
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><div align="center">Título</div></td>
+  </tr>
+  <tr>
+    <td rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;</td>
+  </tr>
+</table>
+El título ocupa 2 columnas. Primera celda de la fila 2 usa solo rowspan="2" (abarca 2 filas pero 1 columna). Tabla de 2 columnas. Tiene cellpadding="0" y cellspacing="0" por lo que las celdas están pegadas sin espacio interior ni separación entre ellas.
