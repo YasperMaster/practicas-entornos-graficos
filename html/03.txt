@@ -166,7 +166,6 @@ El título ocupa 3 columnas. La primer celda ocupa 2 filas (rowspan="2"), las ot
 El título ocupa 3 columnas. La primer celda ocupa 2 columnas (colspan="2"), la tercera ocupa 1 columna. Tiene 3 celdas, todas de una fila.
 
 3.g)
-<!-- Tabla 1 -->
 <table width="200" border="1">
   <tr>
     <td colspan="3"><div align="center">Título</div></td>
@@ -194,3 +193,30 @@ El título ocupa 3 columnas. La primer celda de la fila 2 usa colspan="2" rowspa
   </tr>
 </table>
 El título ocupa 2 columnas. Primera celda de la fila 2 usa solo rowspan="2" (abarca 2 filas pero 1 columna). Tabla de 2 columnas. Tiene cellpadding="0" y cellspacing="0" por lo que las celdas están pegadas sin espacio interior ni separación entre ellas.
+
+3.h)
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+  <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+    Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+  </fieldset>
+  <input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+  LOGIN<br />
+  <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+  <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+  <input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+<form id="form3" name="form3" action="mailto:xx@xx.com" enctype="text/plain" method="post" target="_blank">
+  <fieldset>
+    <legend>LOGIN</legend>
+    Usuario: <input type="text" id="usu3" name="usu3" /><br />
+    Clave: <input type="password" id="clave3" name="clave3" />
+  </fieldset>
+  <input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
