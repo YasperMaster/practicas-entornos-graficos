@@ -1,0 +1,30 @@
+1. ¿Qué es CSS y para qué se usa?
+CSS significa "Cascading Style Sheets" osea hojas de estilo en cascada y es un lenguaje que se utliza para darle estilos a un documento HTML, incluyendo su diseño, su disposición (layout) y la forma en que diferentes dispositivos y pantallas muestran el contenido. 
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+Una regla en CSS consiste en un selector y un bloque de declaracion:
+ej:
+h1 {color:blue;font-size:2px;}
+    "h1" es el selector.
+    "color:blue;" y "font-size:2px;" son declaraciones
+Las declaraciones están conformadas por una propiedad y un valor.
+    "color" y "font-size" son propiedades.
+    "blue" y "2px" son valores.
+
+3. ¿Cuáles son las tres formas de dar estilo a un documento?
+Hay tres tipos de estilos CSS: interno, externo e inline.
+- El CSS interno requiere añadir la etiqueta <style> en la sección <head> del documento HTML.
+- En el CSS externo se requiere enlazar un archivo .css ajeno al archivo HTML.
+- El CSS inline se utiliza para dar estilo a un elemento HTML específico, dentro de la etiqueta HTML, utilizando la etiqueta <style>.
+
+4. ¿Cuáles son los distintos tipos de selectores más utilizados? Ejemplifique cada uno.
+- Selector universal: * { atributo:valor; }
+    * { color: grey; } (El estilo se va a aplicar a todos los elementos de la página)
+- Selector de etiqueta: etiqueta { atributo:valor }
+    p {color: green;} (El estilo se va a aplicar a todos las etiquetas <p>)
+- Selector de clase: .clase { atributo:valor }
+    .header{color: red;} (El estilo se va a aplicar a cualquier etiqueta que tenga la clase .header)
+- Selector de identificador: #id { atributo:valor }
+    #footer {color: blue;} (El estilo se aplicará al elemento que tenga el id #footer)
+
+5. ¿Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
