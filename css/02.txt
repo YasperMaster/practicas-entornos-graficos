@@ -1,0 +1,29 @@
+
+p#normal {
+font-family: arial,helvetica;
+font-size: 11px;
+font-weight: bold;
+}
+
+
+*#destacado {
+border-style: solid;
+border-color: blue;
+border-width: 2px;
+}
+
+#distinto {
+background-color: #9EC7EB;
+color: red;
+}
+
+<p id="normal">Este es un párrafo</p>
+<p id="destacado">Este es otro párrafo</p>
+<table id="destacado">
+    <tr><td>Esta es una tabla</td></tr>
+</table>
+<p id="distinto">Este es el último párrafo</p>
+
+El siguiente codigo muestra 3 párrafos y una tabla con diferentes estilos.
+El primer parrafo <p> tiene un selector de identificación llamado "normal" con los estilos aplicados en el bloque de declaración cuyo cuyo selector es "p#normal". Lo mismo aplica para el tercer parrafo que tiene un selector de identificador llamado "distinto", con su respectivo bloque de declaración.
+El segundo parrafo y la tabla comparten el mismo selector de identificación, "destacado". En este, cuentan con un selector universal "*#destacado" que aplicará para todos aquellos elementos que tengan el identificador id="distinto" como atributo.

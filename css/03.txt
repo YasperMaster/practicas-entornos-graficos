@@ -1,0 +1,43 @@
+p.quitar {
+color: red;
+}
+
+*.desarrollo {
+font-size: 8px;
+}
+
+.importante {
+font-size: 20px;
+}
+
+<p class="desarrollo">
+En este primer párrafo trataremos lo siguiente:
+<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+
+<p class="quitar">
+Este párrafo debe ser quitado de la obra...
+<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+
+<p >
+En este otro párrafo trataremos otro tema:
+<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+
+<p class="importante">
+Y este es el párrafo más importante de la obra...
+<br />
+xxxxxxxxxxxxxxxxxxxxxxxxx
+</ p>
+
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>
+
+En este ejemplo hay cinco parrafos y un titulo. Para darles estilos, se utliza el selector de clase, el universal y el de clase.
+Los elementos con la clase "quitar" estan resaltados en color rojo, hay un parrafo cuyo texto es mas pequeño que tienen la clase "desarrollo" y los que tienen la clase "importante" cuentan con un texto más grande.
+Notar que al ultimo parrafo se le aplican mas de una clase "quitar" e "importante".
