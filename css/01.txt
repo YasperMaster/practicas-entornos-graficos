@@ -1,5 +1,5 @@
 1. ¿Qué es CSS y para qué se usa?
-CSS significa "Cascading Style Sheets" osea hojas de estilo en cascada y es un lenguaje que se utliza para darle estilos a un documento HTML, incluyendo su diseño, su disposición (layout) y la forma en que diferentes dispositivos y pantallas muestran el contenido. 
+CSS significa "Cascading Style Sheets" osea hojas de estilo en cascada y es un lenguaje que se utliza para darle estilos a un documento HTML, incluyendo su diseño, su disposición (layout) y la forma en que diferentes dispositivos y pantallas muestran el contenido.
 
 2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
 Una regla en CSS consiste en un selector y un bloque de declaracion:
@@ -28,3 +28,14 @@ Hay tres tipos de estilos CSS: interno, externo e inline.
     #footer {color: blue;} (El estilo se aplicará al elemento que tenga el id #footer)
 
 5. ¿Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+Una pseudo-clase es una palabra clave que se añade a un selector para darle un estilo específico en ciertas condiciones.
+Las más utilizadas aplicadas a vínculos son:
+- :hover: se aplica cuando el cursor está sobre el vínculo.
+- :active: se aplica cuando el vínculo está siendo presionado.
+- :visited: se aplica cuando el vínculo ya ha sido visitado.
+
+6. ¿Qué es la herencia?
+La herencia es un mecanismo que permite que los estilos de un elemento se apliquen a sus elementos hijos.
+
+7. ¿En qué consiste el proceso denominado cascada?
+Consiste en que los estilos se apliquen de manera jerárquica, de tal manera que los estilos de un elemento padre se heredan por sus elementos hijos.
