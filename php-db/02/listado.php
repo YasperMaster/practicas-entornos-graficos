@@ -3,7 +3,7 @@ include "conexion.php";
 $res = mysqli_query($link, "SELECT * FROM Ciudades") or die(mysqli_error($link));
 ?>
 <h1>Listado de ciudades</h1>
-<table border="1">
+<table>
   <tr><th>id</th><th>ciudad</th><th>país</th><th>habitantes</th><th>superficie</th><th>tieneMetro</th><th>Acciones</th></tr>
 <?php while ($fila = mysqli_fetch_array($res)) { ?>
   <tr>
@@ -15,7 +15,7 @@ $res = mysqli_query($link, "SELECT * FROM Ciudades") or die(mysqli_error($link))
     <td><?= $fila["tieneMetro"] ?></td>
     <td>
       <a href="modificar.php?id=<?= $fila["id"] ?>">Modificar</a> |
-      <a href="baja.php?id=<?= $fila["id"] ?>" onclick="return confirm('¿Borrar?')">Borrar</a>
+      <a href="baja.php?id=<?= $fila["id"] ?>" onclick="return confirm('Borrar?')">Borrar</a>
     </td>
   </tr>
 <?php }

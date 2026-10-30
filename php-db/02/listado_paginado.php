@@ -11,7 +11,7 @@ $paginas = ceil($total / $por_pagina);
 $res = mysqli_query($link, "SELECT * FROM Ciudades LIMIT $inicio, $por_pagina") or die(mysqli_error($link));
 ?>
 <h1>Listado paginado</h1>
-<table border="1">
+<table>
   <tr><th>id</th><th>ciudad</th><th>país</th><th>habitantes</th><th>superficie</th><th>tieneMetro</th></tr>
 <?php while ($fila = mysqli_fetch_array($res)) { ?>
   <tr>
