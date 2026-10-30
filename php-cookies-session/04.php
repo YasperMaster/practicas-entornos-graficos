@@ -23,4 +23,4 @@ if ($elegido != "") {
   <input type="radio" name="titular" value="deportiva"> Deportiva<br>
   <input type="submit" value="Guardar preferencia">
 </form>
-<a href="borrar_cookie.php">Borrar preferencia</a>
+<a href="04-borrar.php">Borrar preferencia</a>

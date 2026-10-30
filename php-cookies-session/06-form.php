@@ -7,13 +7,11 @@ if (isset($_POST["mail"])) {
     if ($fila = mysqli_fetch_array($res)) {
         $_SESSION["nombre"] = $fila["nombre"];
         echo "Alumno encontrado.";
-    } else {
-        echo "El mail no existe.";
     }
 }
 ?>
 <form method="post">
-  Mail del alumno: <input type="text" name="mail">
+  Mail: <input type="text" name="mail">
   <input type="submit" value="Buscar">
 </form>
-<a href="ej6_bienvenida.php">Ir a la página de bienvenida</a>
+<a href="06.php">Ir a la página de bienvenida</a>
