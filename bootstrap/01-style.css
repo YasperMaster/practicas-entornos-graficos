@@ -1,13 +1,9 @@
 .contenedor { background-color: #e8d9f1; padding: 20px; }
-
-/* Colores de los bloques de la estructura del sitio */
 .c-header   { background-color: #a67ea8; height: 100px; }
 .c-sidebar  { background-color: #f4dad0; min-height: 100px; padding: 15px; }
 .c-verde    { background-color: #69cd84; padding: 10px; }
 .c-violeta  { background-color: #9d8c96; min-height: 80px; padding: 10px; }
 .c-celeste  { background-color: #7b9dcc; min-height: 200px; padding: 10px; }
-
-/* Para los ejercicios de grilla de la práctica 2 */
 .b1 { background-color: #a67ea8; height: 60px; }
 .b2 { background-color: #f9e7d9; height: 60px; }
 .b3 { background-color: #e0b0b0; height: 60px; }
